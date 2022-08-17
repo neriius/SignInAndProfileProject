@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">assignment1</string>
+    <string name="settings_text">Settings</string>
+    <string name="user_name">Max Khromochkin</string>
+    <string name="career">Career</string>
+    <string name="home_address">Home address</string>
+    <string name="edit_profile_btn">Edit profile</string>
+    <string name="view_contacts_btn">VIEW MY CONTACTS</string>
+    <string name="settings_of_the_edit_profile_txt">Go to settings and fill out the profile</string>
+    <string name="required">Required</string>
+    <string name="hello_text_view">Hello!</string>
+    <string name="fill_out_the_profile_text_view">Fill out the profile and go to the application!</string>
+    <string name="e_mail_hint">E-mail</string>
+    <string name="password_hint">Password</string>
+    <string name="remember_me_check_box">Remember me</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="login_btn">LOGIN</string>
+    <string name="don_t_have_account_text_view">Don\'t have account?</string>
+    <string name="sign_up">Sign up</string>
+</resources>

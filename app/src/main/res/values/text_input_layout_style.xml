@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextInputLayoutStyle" parent="@style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox">
+        <item name="android:textColorHint">@color/white</item>
+        <item name="passwordToggleTint">@color/white</item>
+        <item name="helperTextTextColor">@color/design_default_color_error</item>
+    </style>
+
+</resources>

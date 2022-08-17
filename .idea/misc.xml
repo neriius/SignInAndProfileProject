@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Programing/android/study/assignment1/app/src/main/res/drawable/ellipse_btn.xml" value="0.1725" />
+        <entry key="..\:/Programing/android/study/assignment1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2745" />
+        <entry key="..\:/Programing/android/study/assignment1/app/src/main/res/drawable/person_icon_background.xml" value="0.2745" />
+        <entry key="..\:/Programing/android/study/assignment1/app/src/main/res/drawable/round_button.xml" value="0.2745" />
+        <entry key="..\:/Programing/android/study/assignment1/app/src/main/res/drawable/square_btn.xml" value="0.218" />
+        <entry key="..\:/Programing/android/study/assignment1/app/src/main/res/drawable/varric_image.xml" value="0.1575" />
+        <entry key="..\:/Programing/android/study/assignment1/app/src/main/res/font/text_fonts.xml" value="0.36875" />
+        <entry key="..\:/Programing/android/study/assignment1/app/src/main/res/layout-v23/activity_main.xml" value="0.2667572463768116" />
+        <entry key="..\:/Programing/android/study/assignment1/app/src/main/res/layout/activity_main.xml" value="0.22780797101449277" />
+        <entry key="..\:/Programing/android/study/assignment1/app/src/main/res/layout/activity_profile.xml" value="0.2545289855072464" />
+        <entry key="..\:/Programing/android/study/assignment1/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
+        <entry key="..\:/Programing/android/study/assignment1/app/src/main/res/layout/sign_up_activity.xml" value="0.2545289855072464" />
+        <entry key="..\:/Programing/android/study/assignment1/app/src/main/res/mipmap-anydpi-v26/person_icon.xml" value="0.1725" />
+        <entry key="..\:/Programing/android/study/assignment1/app/src/main/res/mipmap-anydpi-v26/person_icon_round.xml" value="0.1725" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
