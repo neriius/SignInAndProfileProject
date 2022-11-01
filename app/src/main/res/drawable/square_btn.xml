@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+<!--TODO: Колір хардкодний, тре тримати його або в кольорах, або в темі.
+    Так програма буде стягувати актуальний колір в залежності від
+    схеми кольорів (дарк або лайт, або ще якась).-->
+    <stroke android:width="5px" android:color="#FB5E06" />
+
+</shape>

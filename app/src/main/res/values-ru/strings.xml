@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Задание 1</string>
+    <string name="settings_text">Настройки</string>
+    <string name="user_name">Max Khromochkin</string>
+    <string name="career">Карьера</string>
+    <string name="home_address">Домашний адресс</string>
+    <string name="edit_profile_btn">Настроить профиль</string>
+    <string name="view_contacts_btn">Посмотреть мои контакты</string>
+    <string name="settings_of_the_edit_profile_txt">Зайти в настройки и заполнить профиль</string>
+    <string name="required">Необходимо</string>
+    <string name="hello_text_view">Привет!</string>
+    <string name="fill_out_the_profile_text_view">Заполни профиль и перейди в приложение!</string>
+    <string name="e_mail_hint">E-mail</string>
+    <string name="password_hint">Пароль</string>
+    <string name="remember_me_check_box">Запомнить меня</string>
+    <string name="forgot_your_password">Забыли пароль?</string>
+    <string name="login_btn">ЛОГИН</string>
+    <string name="don_t_have_account_text_view">Нет аккаунта?</string>
+    <string name="sign_up">Войти</string>
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/icon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/links_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/setting_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_text"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="@id/icon_layout"
+            app:layout_constraintTop_toTopOf="@id/icon_layout" />
+        <!--TODO: Аватар не закруглений. Можна використати окрему бібліотеку, а можна вектор.-->
+        <ImageView
+            android:id="@+id/person_icon_image_view"
+            android:layout_width="113dp"
+            android:layout_height="113dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/person_icon"
+            app:layout_constraintLeft_toLeftOf="@id/icon_layout"
+            app:layout_constraintRight_toRightOf="@id/icon_layout"
+            app:layout_constraintTop_toBottomOf="@id/setting_text_view" />
+        <!--TODO: дефолтне значення цього блоку name, а не ім'я ьа фамідія розробника)-->
+        <TextView
+            android:id="@+id/user_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/user_name"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="@id/icon_layout"
+            app:layout_constraintRight_toRightOf="@id/icon_layout"
+            app:layout_constraintTop_toBottomOf="@id/person_icon_image_view" />/>
+
+        <TextView
+            android:id="@+id/career_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/career"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="@id/icon_layout"
+            app:layout_constraintRight_toRightOf="@id/icon_layout"
+            app:layout_constraintTop_toBottomOf="@id/user_name_text_view" />
+
+
+        <TextView
+            android:id="@+id/home_address_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/home_address"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/icon_layout"
+            app:layout_constraintRight_toRightOf="@id/icon_layout"
+            app:layout_constraintTop_toBottomOf="@id/career_text_view" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--TODO: Два ConstraintLayout це ок у даному випадку, але ще почитай про GuideLine.-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/links_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="?android:attr/textColor"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_layout">
+
+
+        <LinearLayout
+            android:id="@+id/links_image_btns_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="62dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/links_layout"
+            app:layout_constraintStart_toStartOf="@id/links_layout"
+            app:layout_constraintTop_toTopOf="@id/links_layout">
+            <!--TODO: Супер не ок використовувати png. Краще майже ніколи цього не робити для
+                      елементів, бо це хардкод. Тре переробити кнопки через вектор.
+                      Назва плагіну: Android Vector Drawable.-->
+
+            <ImageButton
+                android:id="@+id/facebook_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ellipse_btn"
+                android:src="@drawable/facebook_icon" />
+
+            <ImageButton
+                android:id="@+id/linkedin_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:background="@drawable/ellipse_btn"
+                android:src="@drawable/linkedin_icon" />
+
+            <ImageButton
+                android:id="@+id/vkontakte_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:background="@drawable/ellipse_btn"
+                android:src="@drawable/vkontakte_icon" />
+        </LinearLayout>
+
+        <!--TODO: нащо колір бекграунду, якщо він і так на білому фоні? А в темній темі буде не ок.-->
+        <TextView
+            android:id="@+id/settings_edit_profile_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/white"
+            android:text="@string/settings_of_the_edit_profile_txt"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/edit_profile_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <!--TODO: Також кнопочка не по макету.-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edit_profile_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/edit_profile_btn"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/view_contacts_btn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/view_contacts_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FB5E06"
+            android:text="@string/view_contacts_btn"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/links_layout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
